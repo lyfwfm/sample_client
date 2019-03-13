@@ -245,8 +245,8 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "a01d0824-cc10-4fce-875a-5f5c7166d989": {
-    "asset": 1550827353020,
-    "meta": 1550827353030,
+    "asset": 1552463788146,
+    "meta": 1552463788170,
     "relativePath": "mainDialog.fire"
   },
   "f9379c5f-8c73-40bf-be96-8685293ba4d6": {
@@ -270,8 +270,8 @@
     "relativePath": "scripts\\js_btn_send.js"
   },
   "cd5b64f6-e0a8-451f-bf8a-63e6b7dfb145": {
-    "asset": 1551075439923,
-    "meta": 1551075443310,
+    "asset": 1552464748670,
+    "meta": 1552464754623,
     "relativePath": "scripts\\main.js"
   }
 }

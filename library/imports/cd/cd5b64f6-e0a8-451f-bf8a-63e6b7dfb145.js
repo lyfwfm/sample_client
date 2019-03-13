@@ -45,7 +45,7 @@ cc.Class({
             console.log("Send Text WS was opened.");
         };
         ws.onmessage = function (event) {
-            console.log("response text msg: " + event.data);
+            console.log(JSON.parse(event.data)[2][0][0]);
         };
         ws.onerror = function (event) {
             console.log("Send Text fired an error");
@@ -56,7 +56,9 @@ cc.Class({
 
         setTimeout(function () {
             if (ws.readyState === WebSocket.OPEN) {
-                ws.send("Hello WebSocket, I'm a text message.");
+                var sendValue = JSON.stringify([101, 100, [1, 2, 3]]);
+                console.log("send to server :" + sendValue);
+                ws.send(sendValue);
             } else {
                 console.log("WebSocket instance wasn't ready...");
             }
